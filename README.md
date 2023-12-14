@@ -77,8 +77,8 @@ For the database section fill in the following and make sure that Postgres is se
 * **Password** - `<database password set in the secret file>`
 
 For the next section fill in the following fields
-* **Domain** - `Copy gogs ssh (gogs:22/tcp) endpoint into input on install`
-* **SSH Port** `Port taken from ssh (gogs:22/tcp) endpoint.  May be randomly generated`
+* **Domain** - `Copy gogs:22/tcp endpoint into input on install`
+* **SSH Port** `Port taken from the gogs:22/tcp endpoint.  May be randomly generated`
 * **HTTP Port** - `80`
 * **Application URL** - `Copy gogs endpoint into input on install`
 
@@ -90,6 +90,11 @@ After you are done with the form, click "Install Gogs".  If the process is succe
 
 To create your first repository click the "+" sign in the top right corner and fill in the form just like you would for Github.
 
+![gogs_add_repository](https://github.com/randall-coding/gogs-acorn/assets/39175191/0205a686-ca10-4fac-a44a-992cde3ec7d6)
+
 And that's all there is to it.  We now have our own version control server running Gogs.
 
 ## References
+[Gogs Documentation](https://gogs.io/docs/intro)
+[Gogs Docker Tutorial](https://blog.hypriot.com/post/run-your-own-github-like-service-with-docker/)
+[Acorn Documentation](docs.acorn.io/)
