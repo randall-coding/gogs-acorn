@@ -52,16 +52,19 @@ Now that we have our secret file we can deploy our server from a pre-made image 
 
 On the acorn.io dashboard, click "Deploy Acorn" and select "From Acorn Image".
 
+![acorn_deploy_button](https://github.com/randall-coding/gogs-acorn/assets/39175191/c4b2d08b-8991-48d2-bde0-1b252f2f1a08)
+
 Fill in the following fields:
 
 - Name: `<any name you like>`
 - Acorn Image: `ghcr.io/randall-coding/acorn/gogs`
 
-! new acorn deploy
+![acorn_deploy_form](https://github.com/randall-coding/gogs-acorn/assets/39175191/14840bd2-ac35-486d-945f-6d66b9ad9691)
+
 
 Visit the acorn dashboard and find your recent deployment.  Click on the name of your deployment and find the endpoint section in the right panel.  Click "copy" on the website endpoint and visit the link.
 
-! endpoint
+![gogs_endpoints](https://github.com/randall-coding/gogs-acorn/assets/39175191/fcb6fe37-1746-44c1-86b0-31ea6f2ab722)
 
 Visiting the endpoint should show a screen like this:
 
@@ -75,4 +78,8 @@ For the database section fill in the following and make sure that Postgres is se
 
 For the next section fill in the following fields
 **Domain** - Copy gogs ssh (gogs:22/tcp) endpoint into input on install
+**HTTP Port** - 80
 **Application URL** - Copy gogs endpoint into input on install
+
+![gogs_dashboard](https://github.com/randall-coding/gogs-acorn/assets/39175191/e3c46020-4ca8-4c80-b559-5c797fdfad94)
+
