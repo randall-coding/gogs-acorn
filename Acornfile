@@ -1,0 +1,19 @@
+services: {
+  postgres: {
+    image: "ghcr.io/acorn-io/postgres:v15.#-#"
+  }
+}
+
+containers: "gogs" : {
+  image: "gogs/gogs"
+  dependsOn: ["postgres"]
+  ports: ["10880/http", "10022/tcp"]
+  env: [
+    DB_ADAPTER="postgresql",
+    DB_HOST="@{service.postgres.address}",
+    DB_PORT="@{service.postgres.ports.5432}",
+    DB_USER="@{service.postgres.secrets.admin.username}",
+    DB_PASS="@{service.postgres.secrets.admin.password}",
+    DB_NAME="@{service.postgres.data.dbName}",
+  ]
+}
