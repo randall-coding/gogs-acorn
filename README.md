@@ -68,18 +68,28 @@ Visit the acorn dashboard and find your recent deployment.  Click on the name of
 
 Visiting the endpoint should show a screen like this:
 
-! gogs install screen
+![gogs_install1](https://github.com/randall-coding/gogs-acorn/assets/39175191/f06e00a3-894e-4598-9d97-b84dabc41966)
 
 # Setting up Gogs
 For the database section fill in the following and make sure that Postgres is selected
 
-**Host** - in postgres:5432
-**Password** - your database password set in the secret file
+* **Host** - `postgres:5432`
+* **Password** - `<database password set in the secret file>`
 
 For the next section fill in the following fields
-**Domain** - Copy gogs ssh (gogs:22/tcp) endpoint into input on install
-**HTTP Port** - 80
-**Application URL** - Copy gogs endpoint into input on install
+* **Domain** - `Copy gogs ssh (gogs:22/tcp) endpoint into input on install`
+* **SSH Port** `Port taken from ssh (gogs:22/tcp) endpoint.  May be randomly generated`
+* **HTTP Port** - `80`
+* **Application URL** - `Copy gogs endpoint into input on install`
+
+Optionally you can fill out the SMTP Settings and Admin account form.
+
+After you are done with the form, click "Install Gogs".  If the process is successful you should be redirected to the dashboard shown below:
 
 ![gogs_dashboard](https://github.com/randall-coding/gogs-acorn/assets/39175191/e3c46020-4ca8-4c80-b559-5c797fdfad94)
 
+To create your first repository click the "+" sign in the top right corner and fill in the form just like you would for Github.
+
+And that's all there is to it.  We now have our own version control server running Gogs.
+
+## References
