@@ -95,6 +95,6 @@ To create your first repository click the "+" sign in the top right corner and f
 And that's all there is to it.  We now have our own version control server running Gogs.
 
 ## References
-[Gogs Documentation](https://gogs.io/docs/intro)
-[Gogs Docker Tutorial](https://blog.hypriot.com/post/run-your-own-github-like-service-with-docker/)
-[Acorn Documentation](docs.acorn.io/)
+* [Gogs Documentation](https://gogs.io/docs/intro)
+* [Gogs Docker Tutorial](https://blog.hypriot.com/post/run-your-own-github-like-service-with-docker/)
+* [Acorn Documentation](docs.acorn.io/)
