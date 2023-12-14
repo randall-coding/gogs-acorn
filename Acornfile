@@ -7,7 +7,7 @@ services: {
 containers: "gogs" : {
   image: "gogs/gogs"
   dependsOn: ["postgres"]
-  ports: ["10880/http", "10022/tcp"]
+  ports: ["3000/http", "8022:22/tcp"]
   env: [
     DB_ADAPTER="postgresql",
     DB_HOST="@{service.postgres.address}",
