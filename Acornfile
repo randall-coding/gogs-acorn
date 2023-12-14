@@ -23,6 +23,7 @@ containers: "postgres": {
     expose: ["5432"]
   }
   env: {
+    POSTGRES_USER: "gogs"
     POSTGRES_PASSWORD: "secret://admin/password"
     POSTGRES_DB: "gogs"
   }
