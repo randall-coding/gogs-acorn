@@ -13,6 +13,7 @@ containers: {
     ports: {
       publish: ["3000/http", "8022:22/tcp"]
     }
+    memory: 1Gi
   }
 }
 
