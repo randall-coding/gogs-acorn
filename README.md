@@ -48,19 +48,17 @@ acorn secret create \
 ```
 
 ## Deploying Acorn
-Now that we have our secret file we can deploy our server from a pre-made image with just a click.
+Now that we have our secrets created, we can create and deploy our acorn image with a few simple commands.
 
-On the acorn.io dashboard, click "Deploy Acorn" and select "From Acorn Image".
+Clone the repo locally if you haven't already with:
 
-![acorn_deploy_button](https://github.com/randall-coding/gogs-acorn/assets/39175191/c4b2d08b-8991-48d2-bde0-1b252f2f1a08)
+`git clone https://github.com/randall-coding/gogs-acorn.git`
 
-Fill in the following fields:
+Next build and run. You can modify the container RAM by editing the run command.
 
-- Name: `<any name you like>`
-- Acorn Image: `ghcr.io/randall-coding/acorn/gogs`
+`acorn build -t gogs`
 
-![acorn_deploy_form](https://github.com/randall-coding/gogs-acorn/assets/39175191/14840bd2-ac35-486d-945f-6d66b9ad9691)
-
+`acorn run -s gogs-database:gogs -n gogs --memory=1Gi gogs`
 
 Visit the acorn dashboard and find your recent deployment.  Click on the name of your deployment and find the endpoint section in the right panel.  Click "copy" on the website endpoint and visit the link.
 
