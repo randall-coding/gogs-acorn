@@ -75,10 +75,10 @@ For the database section fill in the following and make sure that Postgres is se
 * **Password** - `<database password set in the secret file>`
 
 For the next section fill in the following fields
-* **Domain** - `Copy gogs:22/tcp endpoint into input on install`
+* **Domain** - `Copy gogs:22/tcp endpoint here`
 * **SSH Port** `Port taken from the gogs:22/tcp endpoint.  May be randomly generated`
 * **HTTP Port** - `80`
-* **Application URL** - `Copy gogs endpoint into input on install`
+* **Application URL** - `Copy gogs endpoint here`
 
 Optionally you can fill out the SMTP Settings and Admin account form.
 
